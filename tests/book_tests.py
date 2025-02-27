@@ -9,7 +9,7 @@ from app.database import Base
 
 @pytest.fixture(scope="function")
 def db_session():
-    engine = create_engine("postgresql+psycopg2://admin_test:test@localhost:5432/myapp_test")
+    engine = create_engine(f"postgresql+psycopg2://{NANE_TEST_DB}:{PASSWORD_TEST_DB}@localhost:5432/{NAME_TEST_DB}")
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()

@@ -1,6 +1,6 @@
 import os
 
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+psycopg2://admin1:admin1@localhost:5432/db_library")
+DATABASE_URL = os.getenv("DATABASE_URL", f"postgresql+psycopg2://{USERNAME_DB}:{PASSWORD_DB}@localhost:5432/{NAME_DB}")
 
 
 class Config:
