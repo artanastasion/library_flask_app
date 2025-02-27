@@ -32,7 +32,7 @@
 
    ```bash
    python -m venv venv
-   source venv/bin/activate  # На Windows используйте venv\Scripts\activate
+   source venv/bin/activate
    ```
 
 3. **Установите зависимости:**
